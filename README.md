@@ -4,6 +4,32 @@ Coach personal de inglés para profesionales tech hispanohablantes. En lugar de 
 
 > **Estado:** etapa temprana. El coach funciona con reglas fijas (todavía sin IA) y los datos se guardan solo en tu navegador. Hoy lo usa su autor como primer usuario real; la meta es que sirva a cualquier profesional de tecnología.
 
+## Así crece tu avance
+
+<p align="center">
+  <img src="docs/images/evolucion.gif" alt="La semilla del panel Evolución creciendo de Día 0 a la sesión 6" width="300">
+</p>
+
+Tu progreso se ve como una semilla rodeada de símbolos de código que orbitan. Cada parte responde a datos reales:
+
+| Día 0 | Sesión 1 | Sesión 3 | Sesión 6 |
+| :---: | :---: | :---: | :---: |
+| <img src="docs/images/evolucion-dia-0.png" alt="Día 0: semilla cian sin nodos" width="180"> | <img src="docs/images/evolucion-sesion-1.png" alt="Sesión 1: la semilla se vuelve ámbar y aparece el primer nodo" width="180"> | <img src="docs/images/evolucion-sesion-3.png" alt="Sesión 3: tres nodos y anillo ámbar" width="180"> | <img src="docs/images/evolucion-sesion-6.png" alt="Sesión 6: seis nodos y doce partículas" width="180"> |
+| Repositorio vacío | Primera sesión | Aparece el anillo ámbar | Crecimiento máximo |
+
+- **Color:** la semilla empieza cian y se vuelve ámbar con tu primera sesión completada.
+- **Nodos:** cada sesión agrega un nodo conectado al centro, hasta 6.
+- **Partículas:** cada palabra en inglés que usas de verdad agrega una partícula, hasta 12.
+- **Anillos y órbitas:** con 3 sesiones aparece un anillo ámbar; con más sesiones hay más símbolos y giran más rápido.
+
+Si no hay avance, la semilla no crece: refleja tu progreso, no lo adorna.
+
+<p align="center">
+  <img src="docs/images/app-sesion-completada.png" alt="La app completa: chat con el coach, reporte de sesión y panel de métricas" width="900">
+</p>
+
+<sub>Imágenes generadas con datos de ejemplo. Las métricas que aún no se miden aparecen como «—».</sub>
+
 ## Qué hace
 
 La app tiene dos paneles siempre visibles:
