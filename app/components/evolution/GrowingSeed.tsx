@@ -172,7 +172,7 @@ export default function GrowingSeed({
         <p className="text-slate-400 text-xs">
           {sessionCount === 0
             ? "Tu repositorio de aprendizaje está vacío"
-            : `${wordsLearned} palabras aprendidas${accuracy > 0 ? ` · ${accuracy}% exactitud` : ""}`}
+            : `${wordsLearned} ${wordsLearned === 1 ? "palabra aprendida" : "palabras aprendidas"}${accuracy > 0 ? ` · ${accuracy}% exactitud` : ""}`}
         </p>
         <p className="text-slate-500 text-[10px]">
           {sessionCount === 0

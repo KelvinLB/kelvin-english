@@ -23,7 +23,7 @@ export default function CheckpointIndicator({ profile, activeSession }: Checkpoi
       </div>
       <p className="text-slate-500 text-[10px] mt-1">
         {hasHistory
-          ? `${profile.totalSessions} sesión(es) completada(s) · ${profile.wordsLearned} palabras aprendidas`
+          ? `${profile.totalSessions} ${profile.totalSessions === 1 ? "sesión completada" : "sesiones completadas"} · ${profile.wordsLearned} ${profile.wordsLearned === 1 ? "palabra aprendida" : "palabras aprendidas"}`
           : "Sesión en progreso — sigue conversando"}
       </p>
     </div>

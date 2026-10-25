@@ -3,6 +3,19 @@
 import { useEffect, useRef } from "react";
 import type { Message } from "../../lib/types";
 
+// Los mensajes del coach marcan palabras clave con **negritas**.
+function renderInline(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") ? (
+      <strong key={i} className="font-semibold text-cyan-300">
+        {part.slice(2, -2)}
+      </strong>
+    ) : (
+      part
+    )
+  );
+}
+
 interface MessageListProps {
   messages: Message[];
 }
@@ -33,7 +46,7 @@ export default function MessageList({ messages }: MessageListProps) {
             }`}
           >
             <p className="text-sm whitespace-pre-wrap leading-relaxed">
-              {msg.content}
+              {renderInline(msg.content)}
             </p>
             <span className="text-[10px] text-slate-500 mt-1.5 block">
               {new Date(msg.timestamp).toLocaleTimeString("es-MX", {
